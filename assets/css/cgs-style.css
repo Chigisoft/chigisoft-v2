@@ -1,0 +1,453 @@
+#wrapper {
+    width: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+/*    font-weight: 300;*/
+    font-size: 15px;
+}
+
+@media (max-width: 420px) {
+    #slide-text-holder h1 {
+        font-size: 28px;
+    }
+    .page-title-holder {
+        padding: 2px;
+        width: 20px;
+    }
+    .page-title-holder h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+    }
+    #top-alert {
+        font-size: 12px;
+    }
+    #slide-text-holder p {
+        font-size: 16px;
+    }
+    #slide-text-holder h1 {
+        font-size: 20px;
+    }
+    #slide-text-holder div {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1050px) {
+    #slide-text-holder h1 {
+        font-size: 32px;
+    }
+    .page-title-holder {
+        padding: 2px;
+        width: 20px;
+    }
+    .page-title-holder h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 15px;
+    }
+    #top-alert {
+        font-size: 12px;
+    }
+    #slide-text-holder p {
+        font-size: 20px;
+    }
+    #slide-text-holder h1 {
+        font-size: 24px;
+    }
+    #slide-text-holder div {
+        font-size: 28px;
+    }
+}
+
+#top-alert {
+    text-align: center;
+    color: #262626;
+    width: 100%;
+    /* height: 20px; */
+    padding: 6px 0;
+    background-color: #f1f1f1;
+}
+
+#top-alert a {
+    color: blue;
+}
+
+.bold-span {
+    font-weight: 600;
+}
+
+.blue-bg {
+}
+
+.mouse {
+    width: 25px;
+    height: 45px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12.5px;
+    border-radius: 12px;
+}
+
+@-webkit-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-moz-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-o-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+.mouse::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 100%;
+    left: 50%;
+    top:10px;
+    margin-left: -2.5px;
+    transition:all 0.3s ease-in;
+
+     -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: rotateplane;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*Slider*/
+
+#slider-body {
+    background: #f1f1f1;
+    background-image: url(../img/c-slide-2.jpg);
+    height: 100%;
+/*    height: 565px;*/
+    background-size: cover;
+    padding: 175px 0 100px 0;
+/*    margin: 25px 0px 0px 0;*/
+}
+
+#page-slider-body {
+    background: #f1f1f1;
+    background-image: url(../img/cgs-slider-4-inv.jpg);
+    height: 100%;
+/*    height: 565px;*/
+    background-size: cover;
+    padding: 175px 0 100px 0;
+    border-bottom: 2.5px solid #232a34;
+/*    margin: 25px 0px 0px 0;*/
+}
+
+#services-slider-body {
+    background: #f1f1f1;
+    background-image: url(../img/cgs-slider-3-inv2.jpg);
+    height: 100%;
+    background-size: cover;
+    padding: 120px 0 80px 0;
+/*    margin: 25px 0px 0px 0;*/
+}
+
+#slide-text-holder {
+    background: rgba(35,42,52,0.7);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#slide-title {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+#slide-text {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#bubble {
+    color: white;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+#bubble {
+    color: white;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.b-bub {
+    color: white;
+    font-weight: 300;
+    font-size: 55px;
+}
+
+.page-title-holder {
+/*
+    background: rgba(35,42,52,0.7);
+    padding: 5px 5px 5px 5px;
+    width: 300px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+*/
+}
+
+.page-title {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+#cgs-intro-body {
+/*    margin-top: 20px;*/
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* background: #145187; */
+    background: #232a34;
+    /* color: white; */
+    color: white;
+    font-size: 17px;
+}
+
+/*NavBar*/
+.fa-bars {
+    color: #232a34;
+}
+.nav-container {
+/*    background: #232a34;*/
+    background: white;
+    padding: 7px 0 7px 0;
+    border-bottom: 1px solid rgba(35, 42, 52, 0.2);
+}
+.navbar-brand {
+/*    color: #FFFFFF;*/
+    color: #232a34;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.navbar-brand:hover {
+/*    color: #FFFFFF;    */
+    color: #232a34;  
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+/*    color: #dedede;*/
+    background-color: transparent;
+    border-bottom: 1px solid #232a34;
+/*    border-radius: 20px;*/
+}
+
+.navbar-nav>li>a {
+    color: #232a34;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+/*Active Page*/
+.navbar-fixed-top .navbar-nav > .active > a, .navbar-fixed-top .navbar-nav > .active > a:focus, .navbar-fixed-top .navbar-nav > .active > a:hover {
+    border-bottom: 1px solid #232a34;
+/*    border-radius: 20px;*/
+}
+/* Buttons */
+
+.btn-text {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.cgs-action-btn {
+    background: white;
+    color: #232a34;
+    border: 1px solid #232a34;
+    margin-top: 15px;
+    border-radius: 0;
+}
+
+/* Sections */
+.section-background-inv {
+/*    margin-top: 20px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f1f1f1;
+}
+
+.section-background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white;
+}
+
+.section-background-serv {
+    padding-top: 12.5px;
+    padding-bottom: 25px;
+    background: white;
+}
+
+.service-box {
+    margin-bottom: 40px;
+}
+
+.service-box:hover {
+    background: #fff;
+    cursor: pointer;
+}
+
+.services-link {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.services-head {
+    color: #262626;
+}
+
+.services-text, .services-text:hover, .services-text:focus, .services-text a {
+    color: #262626;
+    text-decoration: none;
+    border: 0 solid #fff;
+}
+
+/*Why Choose us section*/
+#why-choose-us {
+    background: url(../img/c-slide-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    height: 100%;
+}
+
+#wcs-holder {
+    padding: 70px 25px;
+    color: white;
+}
+
+#our-story {
+    background: url(../img/c-slide-5-cut.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    height: 100%;
+}
+
+#os-holder {
+    padding: 50px 25px;
+    color: white;
+}
+
+.inverted-text {
+    background: rgba(35,42,52,0.7);
+    padding: 15px;
+}
+
+.blog-box {
+    background: white;
+    border: 1px solid #cccccc;
+    height: 100px; /*This is tentative, remove when you have logos of featured blogs*/
+    margin-bottom: 25px;
+    padding: 25px 15px;
+}
+
+.client-img {
+    height: 100%;
+    width: auto;
+}
+/*Footer*/
+
+#action-background {
+/*    margin-top: 20px;*/
+    padding-top: 25px;
+    padding-bottom: 30px;
+    /* background: #145187; */
+    background: #232a34;
+    /* color: white; */
+    color: #fff;
+    font-size: 17px;
+}
+
+.about-cgs {
+    color: #656565;
+    font-size: 13.5px;
+}
+
+.footer-social-list li {
+    margin: 25px 5px;
+    list-style: none;
+    display: inline-block;
+    font-size: 24px;
+    color: #232a34;
+}
+.footer-social-list li a {
+    color: #232a34;
+}
+
+.footer-social-list {
+    padding: 0;
+}
+
+#social-links {
+    float: left;
+}
+
+#sub-footer {
+    background: #e9e9e9;
+    color: #303030;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.contact-list li {
+    list-style: none;
+}
+
+.contact-list {
+    padding: 0;
+}
+
+#btn-rq a {
+    background: #232a34;
+}
