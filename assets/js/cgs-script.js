@@ -62,3 +62,8 @@ $(document).ready(function() {
     });
 
 });
+
+
+$('.section-background-prl').parallax({imageSrc: 'assets/img/c-slide-5.jpg'});
+$('.silderr').parallax({imageSrc: 'assets/img/c-slide-2.jpg'});
+$('#page-slider-body').parallax({imageSrc: 'assets/img/cgs-slider-4-inv.jpg'});

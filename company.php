@@ -85,7 +85,7 @@
             </div> 
         </section>
         
-        <section id="our-story" class="section-background-inv">
+        <section id="our-story" class="section-background-prl">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">

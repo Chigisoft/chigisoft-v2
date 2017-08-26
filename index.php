@@ -30,7 +30,7 @@
             <!--Navigation-->
             
             <!--Slider Body-->
-            <section id="slider-body">
+            <section id="slider-body" class="silderr">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -134,7 +134,7 @@
                 </div>
             </section>
             
-            <section id="why-choose-us" class="section-background-inv">
+            <section id="why-choose-us" class="section-background-prl">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
