@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/cgs-style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-	    <link rel="icon" type="image/jpg" href="assets/img/chi.jpg">
+	    <link rel="icon" type="image/jpg" href="assets/img/chi.png">
     </head>
     
     <body>

@@ -11,7 +11,10 @@
                 <span class="sr-only">Toggle navigation</span>
                 <span class="fa fa-bars fa-15x"></span>
             </button>
-            <a class="navbar-brand" href="https://www.chigisoft.com">Chigi<span class="bold-span">soft</span></a>
+<!--            <a class="navbar-brand" href="https://www.chigisoft.com">Chigi<span class="bold-span">soft</span></a>-->
+            <a class="navbar-brand" href="https://www.chigisoft.com">
+                <img alt="CHIGISOFT" src="assets/img/logo.png">
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
