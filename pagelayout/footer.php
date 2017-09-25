@@ -147,8 +147,6 @@
                       $('#errormessage').hide();
                         $('#successmessage').html(response);
                         $('#successmessage').show(500);
-
-
                 }
             });
     }
@@ -158,30 +156,29 @@
         var company = $('#company').val();
         var fullname = $('#fullname').val(); // get the value of the input field
         if (fullname == "" || fullname == " ") {
-		eModal.alert("Please Enter Your fullname <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+		        alert("Please Enter Your fullname <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
             return;
         };
 
 		 var email = $('#email').val(); // get the value of the input field
         if (email == "" || email == " ") {
-		eModal.alert("Please Enter Your e-mail <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+		        alert("Please Enter Your e-mail <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
             return;
         };
 
         var type = $('#type').val(); // get the value of the input field
            if (type == "" || type == " ") {
-       eModal.alert("Please select your type <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+             alert("Please select your type <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
                return;
            };
 
 		 var describe = $('#describe').val(); // get the value of the input field
         if (describe == "" || describe == " ") {
-		eModal.alert("Please Enter Your Description <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+		        alert("Please Enter Your Description <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
             return;
         };
 
 		 spin = '<span class="fa fa-circle-o-notch fa-spin fa-3x text-primary"></span><span class="h4">Loading</span>';
-			eModal.alert(spin,"reply");
 
             var d = {fullname: fullname, email: email, company: company, type: type, describe: describe};
             console.log(d);
@@ -194,7 +191,7 @@
                 alert("error");
             },
             success: function(msg){
-                eModal.alert(msg,"reply") ;
+                alert(msg,"reply") ;
             },
         });
 
