@@ -210,7 +210,6 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Request Quote</h4>
                 </div>
-
                 <div class="modal-body qoute-form-body">
                     <div class="row">
                         <div class="form-group qoute-form" >
