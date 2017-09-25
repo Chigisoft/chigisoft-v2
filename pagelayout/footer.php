@@ -211,45 +211,42 @@
                     <h4 class="modal-title">Request Quote</h4>
                 </div>
 
-                <div class="modal-body">
+                <div class="modal-body qoute-form-body">
                     <div class="row">
-                        <div class="form-group" >
-                            <label class='control-label col-md-2'>Full Name *
+                        <div class="form-group qoute-form" >
+                            <label class='control-label qoute-form-label col-md-3'>Full Name *
                             </label>
-                            <div  class='col-md-10'>
+                            <div  class='col-md-9'>
                                 <input class="form-control" type='text'  placeholder="Enter Full Name"name='fullname' id='fullname' required/>
                             </div>
                         </div>
                     </div>
                     <br>
-                    <br>
                     <div class="row">
-                        <div   class="form-group" >
-                            <label class='control-label col-md-2'>E-Mail *
+                        <div   class="form-group qoute-form" >
+                            <label class='control-label qoute-form-label col-md-3'>E-Mail *
                             </label>
-                            <div  class='col-md-10'>
+                            <div  class='col-md-9'>
                                 <input class="form-control" type='email'  placeholder="Enter E-Mail Address"name='email' id='email'required/>
                             </div>
                         </div>
                     </div>
                     <br>
-                    <br>
                     <div class="row">
-                        <div   class="form-group" >
-                            <label class='control-label col-md-2'>Company Name
+                        <div   class="form-group qoute-form" >
+                            <label class='control-label qoute-form-label col-md-3'>Company Name
                             </label>
-                            <div  class='col-md-10'>
-                                <input class="form-control" type='text'  placeholder="enter company name"name='company'id='company'required/>
+                            <div  class='col-md-9'>
+                                <input class="form-control" type='text' placeholder="enter company name" name='company' id='company' required/>
                             </div>
                         </div>
                     </div>
                     <br>
-                    <br>
                     <div class="row">
-                        <div class="form-group" >
-                            <label class='control-label col-md-2'>Project Type *
+                        <div class="form-group qoute-form" >
+                            <label class='control-label qoute-form-label col-md-3'>Project Type *
                             </label>
-                            <div  class='col-md-10'>
+                            <div  class='col-md-9'>
                                 <select class="form-control" name="type" id='type'>
                                     <option>Website</option>
                                     <option>Web App</option>
@@ -263,10 +260,10 @@
                     </div>
                     <br>
                     <div class="row">
-                        <div class="form-group">
-                            <label class="control-label col-md-12" for="contents">Describe The Project *</label>
+                        <div class="form-group qoute-form">
+                            <label class="control-label qoute-form-label col-md-12" for="contents">Describe The Project *</label>
                             <div class="col-md-12">
-                                <textarea class="form-control" rows="10" col='20' id="describe" wrap='hard' name="describe" required> </textarea>
+                                <textarea class="form-control" rows="8" col='20' id="describe" wrap='hard' name="describe" required> </textarea>
                             </div>
                         </div>
                     </div>

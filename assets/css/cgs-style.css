@@ -458,3 +458,16 @@ body {
 #btn-rq a {
     background: #232a34;
 }
+
+.qoute-form-label{
+    font-size: 12px;
+    padding: 8px 25px 8px 20px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.qoute-form{
+    margin-bottom: 10px;
+}
+.qoute-form-body{
+    padding-top: 45px;
+}
