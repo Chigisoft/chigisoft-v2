@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-sm-3 col-xs-12" style="margin-bottom: 25px;">
                 <img class="img-responsive" src="assets/img/chigisoft.png">
-                <div id="social-links">                                
+                <div id="social-links">
                     <ul class="footer-social-list">
                         <li class="social-facebook"><a href="http://facebook.com/chigisoft" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li class="social-twitter"><a href="http://twitter.com/chigisoft" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -78,7 +78,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                &copy; 2017 CHIGISOFT LTD | All rights reserved. 
+                &copy; 2017 CHIGISOFT LTD | All rights reserved.
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@
         $(".owl-carousel").owlCarousel();
         $("#fade").fadeIn(3000);
     });
-    
+
     function sendMessage()
     {
         var name = $('input#fullname').val().trim();
@@ -125,7 +125,7 @@
             //$('input#fullname').focus();
             return;
         }
-		
+
 		var subject = $('#subject').val(); // get the value of the input field
         if (subject == "") {
 		$('#successmessage').hide();
@@ -147,37 +147,40 @@
                       $('#errormessage').hide();
                         $('#successmessage').html(response);
                         $('#successmessage').show(500);
-           
-
                 }
             });
     }
-    
+
     function sendQuote()
     {
         var company = $('#company').val();
         var fullname = $('#fullname').val(); // get the value of the input field
         if (fullname == "" || fullname == " ") {
-		eModal.alert("Please Enter Your fullname <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+		        alert("Please Enter Your fullname <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
             return;
         };
-		
+
 		 var email = $('#email').val(); // get the value of the input field
         if (email == "" || email == " ") {
-		eModal.alert("Please Enter Your e-mail <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+		        alert("Please Enter Your e-mail <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
             return;
         };
-		
+
+        var type = $('#type').val(); // get the value of the input field
+           if (type == "" || type == " ") {
+             alert("Please select your type <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+               return;
+           };
+
 		 var describe = $('#describe').val(); // get the value of the input field
         if (describe == "" || describe == " ") {
-		eModal.alert("Please Enter Your Description <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
+		        alert("Please Enter Your Description <font color='red'><i class='glyphicon glyphicon-warning-sign'></i></font>","reply") ;
             return;
         };
-		
-		 spin = '<span class="fa fa-circle-o-notch fa-spin fa-3x text-primary"></span><span class="h4">Loading</span>';
-			eModal.alert(spin,"reply");
 
-            var d = {fullname: fullname, email: email, company: company, describe: describe};
+		 spin = '<span class="fa fa-circle-o-notch fa-spin fa-3x text-primary"></span><span class="h4">Loading</span>';
+
+            var d = {fullname: fullname, email: email, company: company, type: type, describe: describe};
             console.log(d);
 
 		 $.ajax({
@@ -188,12 +191,12 @@
                 alert("error");
             },
             success: function(msg){
-                eModal.alert(msg,"reply") ;
+                alert(msg,"reply") ;
             },
         });
-        
+
 		    console.log("fire");
-		  
+
 		  }
 </script>
 
@@ -207,7 +210,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Request Quote</h4>
                 </div>
-                
+
                 <div class="modal-body">
                     <div class="row">
                         <div class="form-group" >
@@ -220,7 +223,7 @@
                     </div>
                     <br>
                     <br>
-                    <div class="row">	
+                    <div class="row">
                         <div   class="form-group" >
                             <label class='control-label col-md-2'>E-Mail *
                             </label>
@@ -248,12 +251,12 @@
                             </label>
                             <div  class='col-md-10'>
                                 <select class="form-control" name="type" id='type'>
-                                    <option>Website</option> 
+                                    <option>Website</option>
                                     <option>Web App</option>
-                                    <option>Software/App</option> 	
-                                    <option>I.T. Infrastructure</option> 	
-                                    <option>Security System</option> 
-                                    <option>Other</option> 
+                                    <option>Software/App</option>
+                                    <option>I.T. Infrastructure</option>
+                                    <option>Security System</option>
+                                    <option>Other</option>
                                 </select>
                             </div>
                         </div>
@@ -265,7 +268,7 @@
                             <div class="col-md-12">
                                 <textarea class="form-control" rows="10" col='20' id="describe" wrap='hard' name="describe" required> </textarea>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <br><br>
                 </div>
